@@ -1,0 +1,198 @@
+:root{
+    --orange:#c7f815;
+    --red: red;
+    --white: whitesmoke;
+    --green: green;
+}
+body,h2{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.landing{
+    background-image: url(Spicy.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: var(--white);
+}
+header a{
+    text-decoration: none;
+    color:var(--orange);
+    min-width: 150px;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1em;
+    padding:1em ;
+}
+header h2 i, a i {
+    margin-right: .5em;
+}
+#logo{
+    flex: 3;
+    font-size: 1.5em;
+    min-width: 400px;
+}
+nav{
+    flex:2;
+    display: flex;
+    align-items: center;
+}
+nav a{
+    flex: 1;
+}
+nav a:hover{
+    color: var(--white);
+}
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    justify-content: center;
+    padding: 2em;
+    
+}
+.tagline1{
+    color: var(--red);
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+.tagline2{
+    color: var(--orange);
+
+}
+.maintext div{
+    margin: .75em;    
+}
+.maintext button{
+    
+    width: 200px;
+    margin-top: 2em;
+    border-radius: 10px;
+    padding: 1em;
+    background-color: var(--green);
+    color: var(--white);
+    border: greenyellow;
+}
+
+.menu{
+    display: grid;
+   background: linear-gradient(to right, rgb(105, 103, 103),rgb(178, 181, 185));
+   color: var(--white);
+   grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+#menuheading, #locheading{
+    display: flex;
+    color:var(--red);
+    background: linear-gradient(to right, rgb(105, 103, 103),rgb(178, 181, 185));
+    font-size: 2.5em;
+    justify-content: center;
+   
+}
+.menu th{
+    color: greenyellow;
+    font-size: 1.7em;
+    
+}
+table{
+    width: 100%;
+    padding: 1em;
+}
+.menu tr{
+    display: flex;
+    margin-top: .8em;
+}
+.menu td:nth-child(1){
+    flex: 1;
+    justify-self: left;
+
+}
+.menu td:nth-child(2){
+    justify-self: right;
+}
+.maincourse{
+grid-row: span 2;
+}
+.locations{
+   background: linear-gradient(to right, rgb(105, 103, 103),rgb(178, 181, 185));
+   color: var(--white);
+   display: flex;
+   flex-wrap: wrap;
+}
+.locations h2{
+    padding-top: .5em;
+    color: greenyellow;
+    margin-bottom: .8em;
+}
+.locations div{
+    flex:1;
+    padding: 1em;
+   min-width: 200px;
+    max-width: 1fr;
+}
+footer{
+    background-color: rgb(231, 162, 93);
+    display: flex;
+    color: var(--white);
+}
+#copyright{
+    flex: 1;
+    text-align: right;
+    margin-top: 40px;
+    margin-right: 10px;
+}
+.social-menu ul{
+    position: relative;
+    display: flex;
+   
+
+}
+
+.social-menu ul li{
+    list-style: none;
+    margin: 0 10px;
+    margin-top: 10px;
+}
+
+.social-menu ul li .fab{
+    font-size: 20px;
+    text-align: center;
+    padding-left: 10px;
+    line-height: 40px;
+    transition: .3s;
+    color: #000;
+}
+
+.social-menu ul li .fab:hover{
+    color: #fff;
+}
+
+.social-menu ul li a{
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0,0,0,.5);
+}
+
+.social-menu ul li a:hover{
+    transform: translate(0, -10%);
+}
+
+.social-menu ul li:nth-child(1) a:hover{
+    background-color: rgba(0, 0, 0, 0.829);
+}
+.social-menu ul li:nth-child(2) a:hover{
+    background-color: #E4405F;
+}
+.social-menu ul li:nth-child(3) a:hover{
+    background-color: #0077b5;
+}
+.social-menu ul li:nth-child(4) a:hover{
+    background-color: #000;
+}
