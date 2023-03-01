@@ -1,0 +1,72 @@
+/* Google Fonts*/   
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+     height: 100vh;
+     width: 100%;
+     background: #ff676d;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     
+}
+.box{
+    max-width: 400px;
+    /* background: greenyellow; */
+    width: 100%;
+}
+
+.box .search-box{
+    position: relative;
+    height: 50px;
+    /* background: yellow; */
+    max-width: 50px;
+    margin: auto;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+    border-radius: 25px;
+    transition: all 1.5s ease;
+}
+#checkboX:checked~ .search-box{
+    max-width: 380px;
+}
+
+.box .search-box input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    padding-left: 20px;
+    font-size: 18px;
+}
+.box .search-box .icon{
+    position: absolute;
+    right: -2px;
+    top: 0;
+    width: 50px;
+    background: #fff;
+    height: 100%;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 50px;
+    color:  #ff676d;
+    font-size: 20px;
+    
+}
+#checkboX:checked~ .search-box .icon{
+    background: #ff676d;
+    color: #fff;
+    border-radius: 0px 25px 25px 0;
+    width: 60px;
+  
+}
+#checkboX{
+    display: none;
+}
